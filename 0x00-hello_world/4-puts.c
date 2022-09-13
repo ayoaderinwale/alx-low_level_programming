@@ -9,7 +9,7 @@
 int main(void)
 {
 	char Mystring[60] = "\"Programming is like building a multilingual puzzle";
-	
+
 	puts(Mystring);
 	return (0);
 }
