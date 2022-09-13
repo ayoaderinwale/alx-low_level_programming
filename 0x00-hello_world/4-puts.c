@@ -2,7 +2,7 @@
 
 /**
  * print string with put() function
- * /
+ */
 
 init main(void)
 {
