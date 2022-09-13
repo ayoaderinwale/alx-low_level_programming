@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 /**
+ * main - print the string in the put function
  * print string with put() function
+ * Return: 0
  */
 
-init main(void)
+int main(void)
 {
-	char Mystring[50] = "\"Programming is like building a multilingual puzzle"\n;
-
-	   puts(Mystr1);
-	   return 0;
-
+	char Mystring[60] = "\"Programming is like building a multilingual puzzle";
+	
+	puts(Mystring);
+	return (0);
 }
