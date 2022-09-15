@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * main -entry point
- * printf() function
- * Return: Always 0 (success)
+ * print_alphabe - function to print abc
+ *
+ * Return: 0
  * program to print all alphabets from a to z
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char ch;
+	char c;
 
-	printf("Alphabets from a - z are: \n");
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		printf("%c\n", ch);
+		_putchar(c);
 	}
-	return (0);
+_putchar('\n');
 }
