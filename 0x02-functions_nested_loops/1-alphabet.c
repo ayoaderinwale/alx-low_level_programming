@@ -1,12 +1,16 @@
-#include "main.h"
-
+#include <stdio.h>
+include "main.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * C program to print all alphabets from a to z
  */
+
 int main(void)
 {
-	print_alphabet();
-	return (0);
+	char ch;
+	printf("Alphabets from a - z are: \n");
+	for(ch='a'; ch<='z'; ch++)
+	{
+		printf("%c\n", ch);
+	}
+	return 0;
 }
