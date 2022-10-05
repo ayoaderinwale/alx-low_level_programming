@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* main - contains agrc and argv
+/** main - contains agrc and argv
  * argv and argv are for compilation
  *
  * return: always 0
