@@ -1,16 +1,37 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - prints a string in reverse
- * @s: string to be printed
- *
- * Return: void
- */
-void _print_rev_recursion(char *s)
+* _strdup - returns a pointer to a newly allocated
+*space in memory, which contains a copy of the
+*string given as a parameter.
+*@str:String to be copied
+*
+*Return: NULL in case of error, pointer to allocated
+*space
+*/
+
+char *_strdup(char *str)
 {
-	if (*s != '\0')
+	char *cpy;
+	int index, len;
+
+	if (str == NULL)
+		return (NULL);
+
+	for (index = 0; str[index]; index++)
+		len++;
+	cpy = malloc(sizeof(char) * (len + 1));
+
+	if (cpy == NULL)
+		return (NULL);
+
+	for (index = 0; str[index]; index++)
 	{
-		_print_rev_recursion(s + 1);
-		_putchar(*s);
+		cpy[index] = str[index];
 	}
+
+	cpy[len] = '\0';
+
+	return (cpy);
+
 }
